@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Задание №1 HTML</title>
+  </head>
+  <body>
+    <h1>Задание №1 HTML</h1>
+    <a href="http://example.com">абсолютную гиперссылку на главную страницу сайта example.com</a><br>
+    <a href="https://example.com">абсолютную на главную сайта example.com в протоколе https</a><br>
+    <a href="ftp://ftp.intel.com/readme.txt">ссылка на файл на сервере FTP без авторизации;</a><br>
+    <a href="ftp://user:123456@example.ru/examples/main.txt">ссылка на файл на сервере FTP с авторизацией</a><br>
+    <a href="https://oir.mobi/uploads/posts/2021-05/1622062787_6-oir_mobi-p-priroda-rossii-priroda-krasivo-foto-6.jpg">ссылка на фрагмент страницы некоторого сайта</a><br>
+    <a href="https://youtu.be/7uky9e-uLKU?t=30">ссылку с двумя параметрами в URL</a>
+    <nav>
+      <a href="index.html" title="Главная">Главная</a>
+      <a href="#footer" title="Подвал сайта">Подвал сайта</a>
+      <a href="#image" title="Картинка">Цветок</a>
+      <a href="#map" title="Карта">Карта</a>
+      </nav>
+    <a>ссылка без href</a><br>
+    <a href="">ссылка с пустым href=""</a><br>
+    <a href="https://example.com" rel=nofollow>ссылка, по которой запрещен переход поисковикам</a><br>
+    <a href="https://example.com"><!--noindex-->ссылка запрещенная для индексации поисковиками<!--/noindex--></a><br>
+    Тег <a href="#footer">&lt;footer&gt;</a> задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа, контактная и правовая информация. <!-- контекстная ссылка в тексте --><br>
+    <a href="image.jpg" id="image"><img src="image.jpg" height="300" width="480" alt="Цветок"></a><!-- ссылка-изображение --><br>
+            <map name="map0">
+                    <area shape="rect" coords="18,12,177,84" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольник">
+                    <area shape="circle" coords="108,147,109,115" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt="Круг">
+                    <area shape="poly" coords="212,77,213,139,389,139" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольный треугольник">
+                </map>
+                <a id="map"><img src="mymap.png" usemap="#map0" alt="Map"></a><br>        
+    <a href="form.html">относительная ссылка на страницу в текущем каталоге</a><br>
+    <a href="about/aboutpage.html">относительная ссылка на страницу в каталоге about</a><br>
+    <a href="../example.html">относительная ссылка на страницу в каталоге уровнем выше текущего</a><br>
+    <a href="../../enoughexample.html">относительная ссылка на страницу в каталоге двумя уровнями вышe</a><br>
+    <a href="index.html">сокращенная ссылка на главную</a><br>
+    <a href="demo.html">сокращенная ссылка на внутреннюю.</a><br>
+  </body>
+  </html>
+    <form action="/"
+      method="POST">
+
+      <label>
+        Однострочное текстовое поле:<br />
+        <input name="field-name-1"
+          value="начальное значение" />
+      </label><br />
+
+      <label>
+        Текстовое поле email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+
+      <label>
+        Многострочное текстовое поле:<br />
+        <textarea name="field-name-2">начальное значение</textarea>
+      </label><br />
+
+      <label>
+        Список (combobox):<br />
+        <select name="field-name-3">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3">Метка3</option>
+        </select>
+      </label><br />
+
+      <label>
+        Список (listbox с множественным выбором):
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3" selected="selected">Метка3</option>
+        </select>
+      </label><br />
+
+      Радиокнопки:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Подпись радиокнопки 1</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Подпись радиокнопки 2</label><br />
+
+      Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Подпись чекбокса ставим справа</label><br />
+
+      Кнопка отправки формы,
+      при нажатии заполненные в форму данные
+      отправятся в формате urlencoded методом
+      POST или GET по адресу URL_отправки_данных:
+      <input type="submit" value="Отправить" />
+    </form>
+    <footer>
+      <a id="footer"></a>
+      <p>Тот самый footer</p>
+  </footer>
+ 
+</body>
+
+</html> 
